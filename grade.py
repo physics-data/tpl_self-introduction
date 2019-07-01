@@ -15,22 +15,22 @@ data = dict()
 
 with open('introduction.txt', 'r') as file:
     content = file.readlines()
-    if len(content) > 1:
+    if len(content) >= 1:
         m = re.search(r'我的姓名：(.+)', content[0])
         if m:
             grade += 25
             data['name'] = m.group(1)
-    if len(content) > 2:
+    if len(content) >= 2:
         m = re.search(r'我的学号：(.+)', content[1])
         if m:
             grade += 25
             data['id'] = m.group(1)
-    if len(content) > 3:
+    if len(content) >= 3:
         m = re.search(r'我的 Python 版本信息：(.+)', content[2])
         if m:
             grade += 25
             data['python'] = m.group(1)
-    if len(content) > 5:
+    if len(content) >= 5:
         m = re.search(r'课程感言：(.+)', '\n'.join(content[4:]))
         if m:
             grade += 25
