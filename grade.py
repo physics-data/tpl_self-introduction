@@ -30,8 +30,8 @@ with open('introduction.txt', 'r') as file:
         if m:
             grade += 25
             data['python'] = m.group(1)
-    if len(content) >= 5:
-        m = re.search(r'课程感言：(.+)', '\n'.join(content[4:]))
+    if len(content) >= 4:
+        m = re.search(r'课程感言：(.+)', '\n'.join(content[3:]))
         if m:
             grade += 25
             data['feeling'] = m.group(1)
