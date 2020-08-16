@@ -49,4 +49,14 @@ Template for the self introduction homework
 2. 输入 `git commit` 回车，表示把当前的修改形成一个完整的提交。在一些环境下，它会提示你设置 EMail 和名字，按照要求输入 `git config --global user.name "Blah Blah"` 和 `git config --global user.email "john@apple.com"` ，然后再次输入 `git commit` 回车。这个时候，你会进入到编辑界面，可能是 nano 也可能是 vim ，类似上面的方法，在第一行输入一些内容，这就是这个提交的信息。
 3. 退出编辑器后，新的提交就完成了，`git status` 会显示当前没有新的更改。
 4. 输入 `git push` ，等待命令完成后，回到 GitHub 上之前打开的仓库页面，刷新就可以看到你刚刚编写的新的 commit 。
-5. 接下来你就可以自由地探索上面用到的这些工具了。
+5. 在你的commit附近，你可以看到一个小红叉或者一个小绿勾，这是提交上来的评测情况，你可以点开Actions相关页面，查看自己作业的评分情况，这次评分一共有四个评分点，分别对应 introduction.txt 的四行。这个评测只用于自测，不用于最终评分。以后的作业中可能会有自动评测部分，也可能没有。
+6. 接下来你就可以自由地探索上面用到的这些工具了。
+
+# 评分
+
+最终分数构成为：
+
+* 黑盒 80 分：助教clone repo并运行grade.py，并将最终得到的100分折算为80分。
+* 白盒 20 分：Git 使用 20 分，主要参照提交记录（commit message），实际提交及其关系。
+
+助教以 deadline 前 GitHub 上最后一次提交为准进行评测。
