@@ -31,6 +31,7 @@ Template for the self introduction homework
 
 ## 第三步：获取 Python3 版本信息
 
+0. **此步由于课程进度原因，可以忽略，如果你的环境中有python，可以将信息填入introduction.txt中，不填入该项依然可以得分（introduction中有dummy的版本号）**
 1. 接下来，需要验证你的 Linux 环境下确实有一个正常运行的 Python 3  。首先输入 `python3`，你这个时候应该可以看到它一些输出。
 2. 记下 `Python 3.x.x` ，你也可以复制下来，留到下一步使用。
 3. 输入 `quit()` 回车以退出 Python 3 。
